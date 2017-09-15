@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{3172E055-B62A-46E3-94D2-9E2DDF544337}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SmartVideoCamera</RootNamespace>
+    <AssemblyName>SmartVideoCamera</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Shell.Execute">
+      <HintPath>..\packages\Shell.Execute.0.1\lib\Shell.Execute.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\Transport\MediaStruct.cs">
+      <Link>MediaStruct.cs</Link>
+    </Compile>
+    <Compile Include="..\Transport\MEDIATYPE.cs">
+      <Link>MEDIATYPE.cs</Link>
+    </Compile>
+    <Compile Include="..\Transport\SmartVideoLocalService.cs">
+      <Link>SmartVideoLocalService.cs</Link>
+    </Compile>
+    <Compile Include="LocalClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\thrift\Thrift.csproj">
+      <Project>{EBCE35DA-CF6A-42BC-A357-A9C09B534299}</Project>
+      <Name>Thrift</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,15 @@
+SmartVideo.userprefs
+Jetson/SmartVideo/SmartVideo/bin
+Jetson/SmartVideo/SmartVideo/obj
+iOS/Garage/Pods
+UserInterfaceState.xcuserstate
+SmartVideo/SmartVideoCamera/bin
+SmartVideo/SmartVideoCamera/obj
+SmartVideo/SmartVideoHub/bin
+SmartVideo/SmartVideoHub/obj
+SmartVideo/thrift/bin
+SmartVideo/thrift/obj
+SmartVideo/SmartVideo.Model/bin
+SmartVideo/SmartVideo.Model/obj
+SmartCloud/SmartCloud.Mvc/bin/
+SmartCloud/SmartCloud.Mvc/obj/

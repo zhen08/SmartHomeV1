@@ -1,0 +1,33 @@
+﻿@model string
+
+@{
+    ViewData["Title"] = "PlayVideo";
+}
+<div>
+    <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin amp-big-play-centered" tabindex="0"> </video>
+
+    <script>
+        var myOptions = {
+            autoplay: true,
+            controls: true,
+            width: "640",
+            height: "480",
+            poster: "",
+            playbackSpeed: {
+                enabled: true,
+                initialSpeed: 2.0,
+                speedLevels: [
+                    { name: "x4.0", value: 4.0 },
+                    { name: "x2.0", value: 2.0 },
+                    { name: "normal", value: 1.0 },
+                    { name: "x0.5", value: 0.5 },
+                ]
+            }
+        };
+        var myPlayer = amp("azuremediaplayer", myOptions);
+        myPlayer.src([{
+            src: "/Video?blob=@Model",
+            type: "video/mp4"
+        },]);
+    </script>
+</div>

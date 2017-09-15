@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartVideoHub", "SmartVideoHub\SmartVideoHub.csproj", "{ACC6A490-BD2A-481F-8CE5-C2DA12A03A0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thrift", "thrift\Thrift.csproj", "{EBCE35DA-CF6A-42BC-A357-A9C09B534299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartVideoCamera", "SmartVideoCamera\SmartVideoCamera.csproj", "{3172E055-B62A-46E3-94D2-9E2DDF544337}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SmartVideo.Model", "SmartVideo.Model\SmartVideo.Model.shproj", "{5AB54A9A-8892-4F38-95B2-C01F18F455F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACC6A490-BD2A-481F-8CE5-C2DA12A03A0B}.Debug|x86.ActiveCfg = Debug|x86
+		{ACC6A490-BD2A-481F-8CE5-C2DA12A03A0B}.Debug|x86.Build.0 = Debug|x86
+		{ACC6A490-BD2A-481F-8CE5-C2DA12A03A0B}.Release|x86.ActiveCfg = Release|x86
+		{ACC6A490-BD2A-481F-8CE5-C2DA12A03A0B}.Release|x86.Build.0 = Release|x86
+		{EBCE35DA-CF6A-42BC-A357-A9C09B534299}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EBCE35DA-CF6A-42BC-A357-A9C09B534299}.Debug|x86.Build.0 = Debug|Any CPU
+		{EBCE35DA-CF6A-42BC-A357-A9C09B534299}.Release|x86.ActiveCfg = Release|Any CPU
+		{EBCE35DA-CF6A-42BC-A357-A9C09B534299}.Release|x86.Build.0 = Release|Any CPU
+		{3172E055-B62A-46E3-94D2-9E2DDF544337}.Debug|x86.ActiveCfg = Debug|x86
+		{3172E055-B62A-46E3-94D2-9E2DDF544337}.Debug|x86.Build.0 = Debug|x86
+		{3172E055-B62A-46E3-94D2-9E2DDF544337}.Release|x86.ActiveCfg = Release|x86
+		{3172E055-B62A-46E3-94D2-9E2DDF544337}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

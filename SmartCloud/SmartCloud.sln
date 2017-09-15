@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCloud.Mvc", "SmartCloud.Mvc\SmartCloud.Mvc.csproj", "{BE80D820-88EA-4BA3-A1CB-1B9B419BD97E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SmartVideo.Model", "..\SmartVideo\SmartVideo.Model\SmartVideo.Model.shproj", "{5AB54A9A-8892-4F38-95B2-C01F18F455F2}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\SmartVideo\SmartVideo.Model\SmartVideo.Model.projitems*{5ab54a9a-8892-4f38-95b2-c01f18f455f2}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE80D820-88EA-4BA3-A1CB-1B9B419BD97E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE80D820-88EA-4BA3-A1CB-1B9B419BD97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE80D820-88EA-4BA3-A1CB-1B9B419BD97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE80D820-88EA-4BA3-A1CB-1B9B419BD97E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

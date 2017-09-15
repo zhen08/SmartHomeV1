@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SmartCloud.Mvc.Models.HomeViewModels.VideoIndexViewModel>
+
+<environment names="Development">
+    <script src="~/js/boundingbox.js" asp-append-version="true"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/js/boundingbox.min.js" asp-append-version="true"></script>
+</environment>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">&nbsp;</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @foreach (var item in Model)
+        {
+            <span class="col-md-4 col-sm-6 col-xs-12">
+                <a asp-action="Index" asp-route-device="@item.DeviceId" class="btn btn-primary">
+                    @Html.DisplayFor(modelItem => item.DeviceId)
+                </a>
+                @Html.DisplayFor(modelItem => item.VideoTime)
+                
+                @if((ViewBag.user=="zhen08@gmail.com")&& (!item.ExportedTraining))
+                {
+                   <a asp-action = "TrainingGood" asp-route-id = "@item.Id">Good &nbsp; </a>
+                   <a asp-action = "TrainingBad" asp-route-id = "@item.Id">Bad &nbsp; </a> 
+                }
+                <br />
+                <br />
+                <a asp-action="PlayVideo" asp-route-blob="@item.VideoBlob">
+                    <boundingbox data="@item" />
+                </a>
+                <br />
+            </span>
+        }
+    </div>
+</div>
